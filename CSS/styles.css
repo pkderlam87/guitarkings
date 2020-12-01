@@ -1,0 +1,41 @@
+header, footer{
+    background-color:#202020;
+    color: #ffffff;
+    text-align: center;
+}
+nav li{
+    display: inline-block;
+}
+nav a{
+    color: #ffffff;
+    text-decoration: none;
+    padding: 10px;
+}
+nav a:hover{
+    text-decoration: underline;
+}
+nav ul{
+    padding: 30px;
+}
+.cta-button{
+    background-color:#BB0000;
+    color: #ffffff;
+}
+.review{
+    background-color: #E8E8E8;
+}
+.featured--products{
+    background-color: #FBFBFB;
+}
+.cta-view{
+    background-color: #BB0000;
+    color: #ffffff;
+}
+.cta-onsale{
+    background-color: #127300;
+    color: #ffffff;
+}
+.cta-contactus{
+    background-color: #BB0000;
+    color: #ffffff;
+}
