@@ -24,10 +24,30 @@
         </nav>
     </header>
     <section>
-        <h1>
-            <center>Contact</center>
-        </h1>
+        <h1>Contact Us</h1>
     </section>
+    <form action="form-contact.php" method="POST">
+        <section>
+            <label for="name">Full Name</label>
+            <input type="text" name="fullname" id="name" class="form">
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email" class="form">
+            <label for="guitar">Guitar</label>
+            <select name="guitar" id="guitar">
+                <option value="adirondackred">Adirondack red</option>
+                <option value="adirondackblue">Adirondack Blue</option>
+                <option value="adirondackgreen">Adirondack Green</option>
+            </select>
+            <input type="checkbox" name="signup" value="signup" id="email-updates"> <label for="signup">Sign up for
+                email
+                updates.</label>
+        </section>
+        <section>
+            <label for="text">Message</label>
+            <textarea id="message" name="message" rows="5" cols="30"></textarea>
+        </section>
+        <input type="submit" value="Send now" class="cta-view">
+    </form>
     <footer>
         <p>Copyright &copy;</p>
     </footer>

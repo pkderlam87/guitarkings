@@ -35,7 +35,7 @@ nav ul{
 }
 .review{
     background-color: #E8E8E8;
-}
+}    
 .featured--products{
     background-color: #FBFBFB;
 }
@@ -50,4 +50,31 @@ nav ul{
 .cta-contactus{
     background-color: #BB0000;
     color: #ffffff;
+}
+/*Home page*/
+.welcome{
+    background-image: url('../images/home-header.jpg');
+    min-height: 70vh;
+    background-repeat: no repeat;
+    background-size: cover;
+    background-position-x:right;
+    background-position-y:bottom;
+}
+.selling-points___images{
+    max-width: 200px;
+    margin-right: 70px;
+    border-radius: 106px;
+}
+.review-img{
+    border-radius: 50%;
+}
+/*Contact page*/
+input,
+select,
+textarea{
+    border: 1px solid #C4C4C4;
+    border-radius: 8px;
+}
+.form__input{
+    display: block;
 }
