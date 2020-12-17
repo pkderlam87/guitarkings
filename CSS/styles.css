@@ -6,7 +6,7 @@ header, footer{
     display: flex;
     background-color:#202020;
     color: #ffffff;
-    align-items: center;
+    text-align: center;
 }
 h1,
 h2,
@@ -16,6 +16,10 @@ h2,
 }
 body{
     font-family: 'Roboto', Verdana, Geneva, Tahoma, sans-serif;
+    min-height: 100vh;
+    margin:0px;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
     }
 .logo a{
     float: left;
@@ -40,6 +44,10 @@ nav ul{
     display: flex;
     margin-left: 25px;
 }
+.footer {
+    text-align: center;
+    padding: 20px;
+}
 /*Links*/
 a {
     text-decoration: none;
@@ -59,16 +67,42 @@ a {
 .review{
     background-color: #E8E8E8;
 }    
-.featured__products{
+.products{
     background-color: #FBFBFB;
+    display: grid;
+    grid-template-columns: 1fr auto;
+    align-items: center;
+    
+}
+.products img{
+    grid-column: -1/1;
+}
+.products h2,
+.products h3, 
+.products p{
+    grid-column: 1;
+    font-size:0.9em;
+    margin:5px;
+}
+.products--sale{
+    display: flex;
+}
+.old-price{
+    text-decoration: line-through;
 }
 .cta-view,
 .cta-onsale{
+    display: grid;
     color: #ffffff;
     border-radius: 6px;
-    padding: 19px 56px;
+    padding: 19px 26px;
     font-size: 0.8em;
     text-transform: uppercase;
+    grid-row: 2/4;
+    grid-column: 2;
+    min-width: 51.2px;
+    text-align: center;
+    margin-top:10px;
 }
 .cta-view{
     background-color: #BB0000;
@@ -137,6 +171,19 @@ a {
 .reviews__name{
     display: block;
 }
+.featured {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    max-width: 1000px;
+    margin: 50px auto;
+    grid-gap: 10px;
+}
+.featured img {
+    width: 100%;
+}
+.featured h2 {
+    grid-column: -1/1;
+}
 /*Contact page*/
 input,
 select,
@@ -192,4 +239,17 @@ textarea{
     justify-content: space-between;
     gap: 10px;
     margin-top: 5px;
+}
+/*Guitars Page*/
+.guitars{
+    max-width: 1000px;
+    margin:auto
+}
+.products-list{
+    display:grid;
+    grid-template-columns: repeat(3, minmax(0,1fr));
+    grid-gap: 20px;
+}
+.products img{
+    width: 100%;
 }
