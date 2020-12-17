@@ -52,9 +52,8 @@ a {
     background-color:#BB0000;
     color: #ffffff;
     border-radius: 6px;
-    margin: 388px 340px;
     padding: 15px 108px;
-    font-size: 1.5em;
+    font-size: 1em;
     text-transform: uppercase;
 }
 .review{
@@ -63,21 +62,19 @@ a {
 .featured__products{
     background-color: #FBFBFB;
 }
-.cta-view{
-    background-color: #BB0000;
+.cta-view,
+.cta-onsale{
     color: #ffffff;
     border-radius: 6px;
     padding: 19px 56px;
     font-size: 0.8em;
     text-transform: uppercase;
 }
+.cta-view{
+    background-color: #BB0000;
+}
 .cta-onsale{
     background-color: #127300;
-    color: #ffffff;
-    border-radius: 6px;
-    padding: 19px 56px;
-    font-size: 0.8em;
-    text-transform: uppercase;
 }
 /*Home page*/
 .welcome{
@@ -108,20 +105,23 @@ a {
     flex: 1;
 }
 .selling-points___images{
-    width: 40%;
+    width: 100%;
     border-radius: 100px;
-    float: right;
 }
-.review{
+.review,
+.review__title{
     display: flex;
     flex-wrap: wrap;
     flex: 100%;
     text-align: center;
-    padding: 50px auto;
+}
+.review__title h2{
+    text-align: center;
 }
 .reviews__content > * {
     text-align: left;
     margin: auto;
+    justify-content: center;
 }
 .reviews__content div{
     margin: 50px;
@@ -143,11 +143,53 @@ select,
 textarea{
     border: 1px solid #C4C4C4;
     border-radius: 8px;
+    margin: 10px 10px 10px 0px;
+    padding: 10px;
 }
-.form__input{
-    display: block;
+.textarea {
+    height: 65%;
 }
-/*Adirondack Red*/
-.main {
+.contact {
+    max-width: 1000px;
+    margin: 50px auto;
+    text-align: center;
+}
+.form-wrapper {
     display: flex;
+    text-align: left;
+}
+.form-wrapper > * {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+/*Adirondack Red*/
+.product-specific {
+    display: flex;
+    max-width: 1000px;
+    margin: 50px auto;
+}
+.product-specific > * {
+    flex: 1;
+}
+.product-specific__details{
+    padding: 0px 30px;
+}
+.product-specific__details a{
+    display: block;
+    width: 95.767px;
+    margin: auto;
+}
+.product-specific__price{
+    font-size: 1.5em;
+}
+.product-image{
+    width: 100%;
+}
+.product-image__thumbnail{
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    margin-top: 5px;
 }
